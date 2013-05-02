@@ -75,12 +75,6 @@ class Kake
     {
         // TODO default and checking
         // TODO proper dependency tree walk
-
-//        val sequence = getSeq(args);
-//        for (outcome in sequence) {
-//            outcome.execute()
-//        }
-
         args.forEach { exports.get(it)!!.execute() }
     }
 
@@ -101,9 +95,4 @@ class Kake
 
         return JarTask(jarFileName, contentFiles)
     }
-
-    //    fun jar(jarFileName: String, inputFiles: FileSet) : Outcome
-    //    {
-    //
-    //    }
 }
