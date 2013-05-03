@@ -44,7 +44,8 @@ trait Outcome
 }
 
 class JavaCTask(val sourceFiles: FileSet)
-: Outcome, FileSet by sourceFiles.withExtension("java", "class")
+: Outcome,
+  FileSet by sourceFiles.withExtension("java", "class")
 {
     override fun execute() {
         val process = Runtime.getRuntime().exec("javac ${sourceFiles.toString(" ")}")

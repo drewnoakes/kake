@@ -1,4 +1,6 @@
-import Kake.kake
+import Kake.*
+
+// TODO use a kotlin script (.kts) to remove the need for a main function
 
 fun main(args: Array<String>) {
 
